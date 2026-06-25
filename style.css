@@ -452,3 +452,117 @@ footer {
         display: none; /* Menyembunyikan deskripsi di HP agar kartu lebih pendek */
     }
 }
+
+/* Tombol Utama (Explore My Work) */
+.btn-primary {
+    background: linear-gradient(90deg, #8b5cf6, #4f46e5);
+    border: none;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #7c3aed, #4338ca);
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.6) !important;
+}
+
+/* Tombol Kedua (About Me) */
+.btn-outline-light {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    transition: all 0.4s ease;
+    font-weight: 600;
+}
+
+.btn-outline-light:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.btn-glow::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(transparent, rgba(255,255,255,0.2), transparent);
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+.btn-glow:hover::after {
+    left: 100%;
+}
+
+/* Efek Hover Skill Card */
+.skill-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: default;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    background: rgba(139, 92, 246, 0.15); /* Muncul rona ungu tipis */
+    border-color: #8b5cf6;               /* Border berubah menjadi ungu */
+    box-shadow: 0 5px 20px rgba(139, 92, 246, 0.3); /* Glow yang lembut */
+}
+
+@media (max-width: 768px) {
+    /* Mengurangi ukuran foto di layar HP */
+    .hero-text img {
+        max-width: 200px !important;
+    }
+
+    /* Mengurangi padding hero agar tidak terlalu tinggi (memakan layar) */
+    #hero {
+        min-height: auto !important;
+        padding-top: 100px !important;
+        padding-bottom: 60px !important;
+    }
+    
+    /* Mengatur ulang teks agar tidak terlalu lebar */
+    .hero-text {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.text-primary {
+    color: #8b5cf6 !important;
+}
+.border-primary {
+    border-color: #8b5cf6 !important;
+}
+
+/* Sembunyikan pesawat secara default */
+.plane-icon {
+    display: inline-block;
+    opacity: 0;
+    transition: all 0.4s ease;
+    transform: translateX(-10px) rotate(45deg);
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+
+/* Saat nav-link aktif, pesawat muncul dan terbang ke kanan */
+.nav-link.active .plane-icon {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+}
+
+/* Opsional: Animasi "terbang" kecil */
+.nav-link.active .plane-icon {
+    animation: fly 2s infinite ease-in-out;
+}
+
+@keyframes fly {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}

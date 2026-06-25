@@ -89,13 +89,23 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-md-4">
-                    <li class="nav-item mx-2"><a class="nav-link fs-5" href="#hero">Hero</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link fs-5" href="#about">About</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link fs-5" href="#projects">Projects</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link fs-5" href="#experience">Experience</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link fs-5" href="#sertificate">Certificate</a></li>
-                </ul>
-            </div>
+        <li class="nav-item mx-2">
+            <a class="nav-link fs-5" href="#hero">Hero <span class="plane-icon">✈</span></a>
+        </li>
+        <li class="nav-item mx-2">
+            <a class="nav-link fs-5" href="#about">About <span class="plane-icon">✈</span></a>
+        </li>
+        <li class="nav-item mx-2">
+            <a class="nav-link fs-5" href="#projects">Projects <span class="plane-icon">✈</span></a>
+        </li>
+        <li class="nav-item mx-2">
+            <a class="nav-link fs-5" href="#experience">Experience <span class="plane-icon">✈</span></a>
+        </li>
+        <li class="nav-item mx-2">
+            <a class="nav-link fs-5" href="#sertificate">Certificate <span class="plane-icon">✈</span></a>
+        </li>
+    </ul>
+</div>
         </div>
     </nav>
 
@@ -114,17 +124,18 @@
                 <h2 id="typed-title" class="h3 fw-light text-secondary mb-4"></h2>
                <p id="typed-text" class="lead text-muted mb-4 pe-md-5"></p>
                 <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start">
-                    <a href="#projects" class="btn btn-primary btn-lg px-4 shadow-primary">Explore My Work</a>
+                    <a href="#projects" class="btn btn-primary btn-lg px-4 shadow-primary btn-glow">Explore My Work</a>
                     <a href="#about" class="btn btn-outline-light btn-lg px-4">About Me</a>
                 </div>
             </div>
             
-            <div class="col-md-6 text-center" data-aos="fade-left" data-aos-duration="1000">
-                <div class="position-relative d-inline-block">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 border border-primary opacity-50 rounded-4" style="transform: translate(20px, 20px); z-index: -1;"></div>
-                    <img src="images/mukapakealmet.png" alt="Jiwa" class="img-fluid rounded-4 shadow-lg bg-dark" style="max-width: 320px; border: 2px solid rgba(255,255,255,0.1);">
-                </div>
+            <div class="col-md-6 text-center mt-5 mt-md-0" data-aos="fade-left" data-aos-duration="1000">
+            <div class="position-relative d-inline-block">
+                <div class="d-none d-md-block position-absolute top-0 start-0 w-100 h-100 border border-primary opacity-50 rounded-4" style="transform: translate(20px, 20px); z-index: -1;"></div>
+                
+                <img src="images/mukapakealmet.png" alt="Jiwa" class="img-fluid rounded-4 shadow-lg bg-dark" style="max-width: 250px; border: 2px solid rgba(255,255,255,0.1);">
             </div>
+</div>
         </div>
     </div>
 </section>
@@ -134,7 +145,11 @@
         <div class="row g-4 align-items-stretch">
             <div class="col-md-4">
                 <div class="card p-4 text-center h-100 glass-card">
-                    <img src="images/pakebatik.jpg" alt="Profile" class="rounded-circle mb-3 border border-primary border-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <img src="images/pakebatik.jpg" 
+                         alt="Profile" 
+                         class="rounded-circle mb-3 border border-primary border-3 mx-auto d-block" 
+                         style="width: 120px; height: 120px; object-fit: cover;">
+                    
                     <h5 class="fw-bold mb-0">Muhammad Jiwa Islamutidar</h5>
                     <p class="text-primary mb-3">Full Stack Web Developer</p>
                     
@@ -149,15 +164,21 @@
                         <p><i class="bi bi-geo-alt-fill text-primary me-2"></i> Tangerang, Indonesia</p>
                     </div>
                     
-                    <a href="images/cv baru.png" target="_blank" class="btn btn-primary w-100 mt-4 rounded-pill">Lihat CV</a>
+                    <a href="images/cv baru.png" target="_blank" class="btn btn-primary w-100 mt-4 rounded-pill btn-glow">Lihat CV</a>
                 </div>
             </div>
 
             <div class="col-md-8">
                 <div class="card p-5 h-100 glass-card d-flex flex-column justify-content-center">
-                    <h2 class="fw-bold mb-4 text-primary">About Me</h2>
-                    <p class="fs-5 lh-lg text-light">Hallo! Saya Jiwa, mahasiswa aktif Teknik Informatika di Universitas Pamulang. Saya memiliki minat besar di bidang Web Development dan Cyber Security.</p>
-                    <p class="fs-5 lh-lg text-secondary">Saat ini saya fokus pada pengembangan website menggunakan teknologi modern. Saya percaya bahwa teknologi yang dirancang dengan baik dapat memberikan dampak positif yang nyata bagi kehidupan.</p>
+                    <h2 class="fw-bold mb-4">
+                        <span class="text-primary">About</span> Me
+                    </h2>
+                    <p class="fs-5 lh-lg text-light">
+                        Hallo! Saya <strong>Jiwa</strong>, mahasiswa aktif Teknik Informatika di Universitas Pamulang. Saya memiliki minat besar di bidang Web Development dan Cyber Security.
+                    </p>
+                    <p class="fs-5 lh-lg text-secondary">
+                        Saat ini saya fokus pada pengembangan website menggunakan teknologi modern. Saya percaya bahwa teknologi yang dirancang dengan baik dapat memberikan dampak positif yang nyata bagi kehidupan.
+                    </p>
                 </div>
             </div>
         </div>
@@ -168,13 +189,13 @@
     <div class="container">
         <h2 class="fw-bold text-center mb-5">Technical <span class="text-primary">Skills</span></h2>
         <div class="row g-3 justify-content-center">
-            <div class="col-6 col-md-3"><div class="card glass-card p-3 text-center fw-bold">HTML5</div></div>
-            <div class="col-6 col-md-3"><div class="card glass-card p-3 text-center fw-bold">CSS3</div></div>
-            <div class="col-6 col-md-3"><div class="card glass-card p-3 text-center fw-bold">JavaScript</div></div>
-            <div class="col-6 col-md-3"><div class="card glass-card p-3 text-center fw-bold">React JS</div></div>
-            <div class="col-6 col-md-3"><div class="card glass-card p-3 text-center fw-bold">Next JS</div></div>
-            <div class="col-6 col-md-3"><div class="card glass-card p-3 text-center fw-bold">Bootstrap</div></div>
-            <div class="col-6 col-md-3"><div class="card glass-card p-3 text-center fw-bold">Tailwind</div></div>
+            <div class="col-6 col-md-3"><div class="card glass-card skill-card p-3 text-center fw-bold">HTML5</div></div>
+            <div class="col-6 col-md-3"><div class="card glass-card skill-card p-3 text-center fw-bold">CSS3</div></div>
+            <div class="col-6 col-md-3"><div class="card glass-card skill-card p-3 text-center fw-bold">JavaScript</div></div>
+            <div class="col-6 col-md-3"><div class="card glass-card skill-card p-3 text-center fw-bold">React JS</div></div>
+            <div class="col-6 col-md-3"><div class="card glass-card skill-card p-3 text-center fw-bold">Next JS</div></div>
+            <div class="col-6 col-md-3"><div class="card glass-card skill-card p-3 text-center fw-bold">Bootstrap</div></div>
+            <div class="col-6 col-md-3"><div class="card glass-card skill-card p-3 text-center fw-bold">Tailwind</div></div>
         </div>
     </div>
 </section>
