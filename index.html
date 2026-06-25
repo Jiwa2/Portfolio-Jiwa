@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Jiwa | Mahasiswa Teknik Informatika</title>
+    <title>Muhammad Jiwa Islamutidar | Mahasiswa Teknik Informatika</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     
     <style>
         html {
@@ -98,182 +99,191 @@
         </div>
     </nav>
 
-    <section id="hero" class="vh-100 py-5 d-flex align-items-center">
-        <div class="container">
-            <div class="row align-items-center text-center text-md-start">
-                <div class="col-md-6 mb-5 hero-text">
-                    <p class="fs-5 fw-semibold mb-1 text-muted">Hello, I'M Jiwa</p>
-                    <h1 class="fs-1 fw-bold display-4" style="color: rgb(53, 180, 248);">Web Development</h1>
-                    <p class="lead fs-5 text-secondary">Saya adalah Mahasiswa Teknik Informatika yang menempuh pendidikan di Universitas Pamulang yang tertarik di bidang Web Development.</p>
-                    <a href="#projects" class="btn btn-primary btn-lg mt-3" style="background: linear-gradient(90deg, #0d6efd, #6610f2); border: none;">Explore My Work</a>
+<section id="hero" class="min-vh-100 d-flex align-items-center position-relative overflow-hidden pt-5">
+    <div class="position-absolute top-50 start-50 translate-middle w-50 h-50 opacity-20 rounded-circle" 
+     style="filter: blur(100px); z-index: -1; background: #8b5cf6;">
+</div>
+
+    <div class="container">
+        <div class="row align-items-center text-center text-md-start g-5">
+            <div class="col-md-6 hero-text" data-aos="fade-right" data-aos-duration="1000">
+                <span class="badge bg-primary bg-opacity-25 text-primary px-3 py-2 mb-3 rounded-pill">Available for Collaboration</span>
+                <h1 class="display-3 fw-bold mb-3">
+                    Hi, I'm <span class="text-gradient">Jiwa</span>
+                </h1>
+                <h2 class="h3 fw-light text-secondary mb-4">Informatics Engineering Student & Web Developer</h2>
+                <p class="lead text-muted mb-4 pe-md-5">
+                    Membangun solusi digital yang efisien dengan perpaduan desain modern dan kode yang bersih. Fokus pada pengembangan web, optimasi performa, dan inovasi berbasis user-centric.
+                </p>
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start">
+                    <a href="#projects" class="btn btn-primary btn-lg px-4 shadow-primary">Explore My Work</a>
+                    <a href="#about" class="btn btn-outline-light btn-lg px-4">About Me</a>
                 </div>
-                <div class="col-md-6 text-center text-md-end hero-img">
-                    <div style="background-color: #89898a; padding: 12px; display: inline-block; border-radius: 12px; box-shadow: 0 0 20px rgba(247, 247, 248, 0.2);">
-                        <img src="images/mukapakealmet.png" alt="Foto" class="img-fluid shadow-lg" style="max-width: 250px; background-color: #215181; border-radius: 10px;">
-                    </div>
+            </div>
+            <div class="col-md-6 text-center" data-aos="fade-left" data-aos-duration="1000">
+                <div class="position-relative d-inline-block">
+                    <!-- Efek Border Foto -->
+                    <div class="position-absolute top-0 start-0 w-100 h-100 border border-primary opacity-50 rounded-4" style="transform: translate(20px, 20px); z-index: -1;"></div>
+                    <img src="images/mukapakealmet.png" alt="Jiwa" class="img-fluid rounded-4 shadow-lg bg-dark" style="max-width: 320px; border: 2px solid rgba(255,255,255,0.1);">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="about" class="py-5 bg-opacity-10 bg-light">
-        <div class="container">
-            <div class="row g-4 align-items-stretch">
-                <div class="col-md-4">
-                    <div class="card p-4 text-center h-100 d-flex flex-column align-items-center justify-content-between" style="background: rgba(27, 26, 26, 0.4); border-radius: 1rem; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1);">
-                        <div class="w-100">
-                            <div class="d-flex justify-content-center w-100 mb-3">
-                                <img src="images/pakebatik.jpg" alt="Foto Profil" class="rounded-circle" style="width: 120px; height: 120px; object-fit: cover; border: 4px solid #0d6efd; box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);">
-                            </div>
-                            <h5 class="fw-bold mb-0">Muhammad Jiwa Islamutidar</h5>
-                            <p class="text-primary mb-2">Full Stack Web Developer</p>
-                            
-                            <div class="d-flex justify-content-center gap-3 mb-3">
-                                <a href="#" class="text-light fs-5"><i class="bi bi-github"></i></a>
-                                <a href="#" class="text-light fs-5"><i class="bi bi-linkedin"></i></a>
-                                <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
-                            </div>
-                            <p class="fst-italic small text-muted">"Jangan takut jatuh jika belum coba melompat."</p>
-                            <hr class="bg-light">
-                            <div class="text-start small px-2">
-                                <p class="mb-2"><i class="bi bi-envelope-fill text-primary me-2"></i> mjiwaislamutidar@gmail.com</p>
-                                <p class="mb-2"><i class="bi bi-telephone-fill text-primary me-2"></i> +62 857 1002 2851</p>
-                                <p class="mb-0"><i class="bi bi-geo-alt-fill text-primary me-2"></i> Tangerang, Indonesia</p>
-                            </div>
-                        </div>
-                        <a href="images/cv baru.png" target="_blank" class="btn btn-primary w-100 mt-4" style="background: linear-gradient(90deg, #6f42c1, #0d6efd); border: none;">
-                            <strong>Lihat CV</strong>
-                        </a>
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row g-4 align-items-stretch">
+            <div class="col-md-4">
+                <div class="card p-4 text-center h-100 glass-card">
+                    <img src="images/pakebatik.jpg" alt="Profile" class="rounded-circle mb-3 border border-primary border-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h5 class="fw-bold mb-0">Muhammad Jiwa Islamutidar</h5>
+                    <p class="text-primary mb-3">Full Stack Web Developer</p>
+                    
+                    <div class="d-flex justify-content-center gap-3 mb-3">
+                        <a href="https://github.com/mjiwa" class="text-light fs-5"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammad-jiwa-islamutidar" class="text-light fs-5"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/mjiwa_" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
                     </div>
+                    
+                    <div class="text-start small mt-3">
+                        <p><i class="bi bi-envelope-fill text-primary me-2"></i> mjiwaislamutidar@gmail.com</p>
+                        <p><i class="bi bi-geo-alt-fill text-primary me-2"></i> Tangerang, Indonesia</p>
+                    </div>
+                    
+                    <a href="images/cv baru.png" target="_blank" class="btn btn-primary w-100 mt-4 rounded-pill">Lihat CV</a>
                 </div>
-                <div class="col-md-8">
-                    <div class="card p-4 h-100 justify-content-center" style="background: rgba(255, 255, 255, 0.03); border-radius: 1rem; border: 1px solid rgba(255,255,255,0.05);">
-                        <h2 class="fw-bold mb-4 text-start text-primary">About Me</h2>
-                        <p class="fs-5 lh-base">Hallo! Saya Jiwa, mahasiswa aktif Teknik Informatika di Universitas Pamulang. Saya memiliki minat besar di Web Development dan Cyber Security.</p>
-                        <p class="fs-5 lh-base text-secondary">Saat ini saya fokus pada pengembangan Website dengan HTML dan CSS. Saya percaya bahwa teknologi bisa membuat perubahan besar bagi kehidupan.</p>
-                    </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="card p-5 h-100 glass-card d-flex flex-column justify-content-center">
+                    <h2 class="fw-bold mb-4 text-primary">About Me</h2>
+                    <p class="fs-5 lh-lg text-light">Hallo! Saya Jiwa, mahasiswa aktif Teknik Informatika di Universitas Pamulang. Saya memiliki minat besar di bidang Web Development dan Cyber Security.</p>
+                    <p class="fs-5 lh-lg text-secondary">Saat ini saya fokus pada pengembangan website menggunakan teknologi modern. Saya percaya bahwa teknologi yang dirancang dengan baik dapat memberikan dampak positif yang nyata bagi kehidupan.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
+<section id="skills" class="py-5">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-5">Technical <span class="text-primary">Skills</span></h2>
+        <div class="row g-3 justify-content-center">
+            <div class="col-6 col-md-3"><div class="card glass-card p-3 text-center fw-bold">HTML5</div></div>
+            <div class="col-6 col-md-3"><div class="card glass-card p-3 text-center fw-bold">CSS3</div></div>
+            <div class="col-6 col-md-3"><div class="card glass-card p-3 text-center fw-bold">JavaScript</div></div>
+            <div class="col-6 col-md-3"><div class="card glass-card p-3 text-center fw-bold">React JS</div></div>
+        </div>
+    </div>
+</section>
+
+
+    
 <section id="projects" class="py-5">
-        <div class="container">
-            <h2 class="fw-bold text-center mb-5">Mini <span class="text-primary">Projects</span></h2>
-            <div class="row g-4">
-                
-                <div class="col-md-6">
-                    <div class="card p-4 h-100 card-hover d-flex flex-column justify-content-between">
-                        <div>
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="bi bi-layers-fill text-primary fs-3 me-3"></i>
-                                <h5 class="fw-bold mb-0">Web Himpunan Mahasiswa Teknik Informatika Unpam</h5>
-                            </div>
-                            <p class="text-muted small">Mengembangkan platform web resmi untuk organisasi HIMTIF menggunakan teknologi modern.</p>
-                            <span class="badge bg-dark text-primary align-self-start mb-3">React JS, JavaScript</span>
+    <div class="container">
+        <h2 class="fw-bold text-center mb-5">Mini <span class="text-primary">Projects</span></h2>
+        <div class="row g-4">
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card p-4 h-100 glass-card d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-layers-fill text-primary fs-3 me-3"></i>
+                            <h5 class="fw-bold mb-0">Web HIMTIF Unpam</h5>
                         </div>
-                        <div class="mt-3">
-                            <a href="https://himtifunpam.vercel.app/" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-3">
-                                <i class="bi bi-box-arrow-up-right me-1"></i> View Project
-                            </a>
-                        </div>
+                        <p class="text-muted small">Mengembangkan platform web resmi untuk organisasi HIMTIF menggunakan teknologi modern.</p>
+                        <span class="badge bg-primary bg-opacity-10 text-primary mb-3">React JS, JavaScript</span>
                     </div>
+                    <a href="https://himtifunpam.vercel.app/" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-3">
+                        <i class="bi bi-box-arrow-up-right me-1"></i> View Project
+                    </a>
                 </div>
-
-                <div class="col-md-6">
-                    <div class="card p-4 h-100 card-hover d-flex flex-column justify-content-between">
-                        <div>
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="bi bi-code-slash text-primary fs-3 me-3"></i>
-                                <h5 class="fw-bold mb-0">Web Training Center</h5>
-                            </div>
-                            <p class="text-muted small">Aplikasi web interaktif untuk manajemen atau pusat pelatihan (*training center*).</p>
-                            <span class="badge bg-dark text-primary align-self-start mb-3">HTML, React JS, CSS</span>
-                        </div>
-                        <div class="mt-3">
-                            <a href="#" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-3">
-                                <i class="bi bi-box-arrow-up-right me-1"></i> View Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="card p-4 h-100 card-hover d-flex flex-column justify-content-between">
-                        <div>
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="bi bi-cpu text-primary fs-3 me-3"></i>
-                                <h5 class="fw-bold mb-0">Apk Manajemen Data Mahasiswa (CRUD)</h5>
-                            </div>
-                            <p class="text-muted small">Sistem informasi berbasis CRUD untuk mengelola basis data akademik mahasiswa secara terstruktur.</p>
-                            <span class="badge bg-dark text-primary align-self-start mb-3">Database, CRUD System</span>
-                        </div>
-                        <div class="mt-3">
-                            <a href="https://sistem-manajemen-mahasiswa-eqnx.vercel.app/" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-3">
-                                <i class="bi bi-box-arrow-up-right me-1"></i> View Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                                <div class="col-md-6">
-                    <div class="card p-4 h-100 card-hover d-flex flex-column justify-content-between">
-                        <div>
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="bi bi-cpu text-primary fs-3 me-3"></i>
-                                <h5 class="fw-bold mb-0">Sistem manajemen kost</h5>
-                            </div>
-                            <p class="text-muted small">Sistem informasi berbasis website untuk sistem pengelolaan kost untuk pemilik kost dan penghuni kost.</p>
-                            <span class="badge bg-dark text-primary align-self-start mb-3">Next JS</span>
-                        </div>
-                        <div class="mt-3">
-                            <a href="https://project-kost.vercel.app" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-3">
-                                <i class="bi bi-box-arrow-up-right me-1"></i> View Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                                                <div class="col-md-6">
-                    <div class="card p-4 h-100 card-hover d-flex flex-column justify-content-between">
-                        <div>
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="bi bi-cpu text-primary fs-3 me-3"></i>
-                                <h5 class="fw-bold mb-0">Sistem pencatatan keuangan</h5>
-                            </div>
-                            <p class="text-muted small">Sistem pencatatan keuangan untuk pelaku usaha.</p>
-                            <span class="badge bg-dark text-primary align-self-start mb-3">HTML, CSS</span>
-                        </div>
-                        <div class="mt-3">
-                            <a href="https://manajemen-mahasiswa-auce.vercel.app/" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-3">
-                                <i class="bi bi-box-arrow-up-right me-1"></i> View Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="card p-4 h-100 card-hover d-flex flex-column justify-content-between">
-                        <div>
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="bi bi-globe text-primary fs-3 me-3"></i>
-                                <h5 class="fw-bold mb-0">Portfolio Website</h5>
-                            </div>
-                            <p class="text-muted small">Web portofolio pribadi responsif sebagai representasi skill dan pengalaman di bidang IT.</p>
-                            <span class="badge bg-dark text-primary align-self-start mb-3">HTML, CSS, Bootstrap</span>
-                        </div>
-                        <div class="mt-3">
-                            <a href="#" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-3">
-                                <i class="bi bi-box-arrow-up-right me-1"></i> View Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </div>
-    </section>
 
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card p-4 h-100 glass-card d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-code-slash text-primary fs-3 me-3"></i>
+                            <h5 class="fw-bold mb-0">Web Training Center</h5>
+                        </div>
+                        <p class="text-muted small">Aplikasi web interaktif untuk manajemen atau pusat pelatihan (*training center*).</p>
+                        <span class="badge bg-primary bg-opacity-10 text-primary mb-3">HTML, React JS, CSS</span>
+                    </div>
+                    <a href="#" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-3">
+                        <i class="bi bi-box-arrow-up-right me-1"></i> View Project
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card p-4 h-100 glass-card d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-cpu text-primary fs-3 me-3"></i>
+                            <h5 class="fw-bold mb-0">Manajemen Data Mahasiswa</h5>
+                        </div>
+                        <p class="text-muted small">Sistem informasi berbasis CRUD untuk mengelola basis data akademik mahasiswa.</p>
+                        <span class="badge bg-primary bg-opacity-10 text-primary mb-3">Database, CRUD</span>
+                    </div>
+                    <a href="https://sistem-manajemen-mahasiswa-eqnx.vercel.app/" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-3">
+                        <i class="bi bi-box-arrow-up-right me-1"></i> View Project
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card p-4 h-100 glass-card d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-house-door text-primary fs-3 me-3"></i>
+                            <h5 class="fw-bold mb-0">Sistem Manajemen Kost</h5>
+                        </div>
+                        <p class="text-muted small">Sistem informasi berbasis website untuk pengelolaan kost untuk pemilik dan penghuni.</p>
+                        <span class="badge bg-primary bg-opacity-10 text-primary mb-3">Next JS</span>
+                    </div>
+                    <a href="https://project-kost.vercel.app" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-3">
+                        <i class="bi bi-box-arrow-up-right me-1"></i> View Project
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card p-4 h-100 glass-card d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-wallet2 text-primary fs-3 me-3"></i>
+                            <h5 class="fw-bold mb-0">Pencatatan Keuangan</h5>
+                        </div>
+                        <p class="text-muted small">Sistem pencatatan keuangan sederhana untuk pelaku usaha.</p>
+                        <span class="badge bg-primary bg-opacity-10 text-primary mb-3">HTML, CSS</span>
+                    </div>
+                    <a href="https://manajemen-mahasiswa-auce.vercel.app/" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-3">
+                        <i class="bi bi-box-arrow-up-right me-1"></i> View Project
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card p-4 h-100 glass-card d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-globe text-primary fs-3 me-3"></i>
+                            <h5 class="fw-bold mb-0">Portfolio Website</h5>
+                        </div>
+                        <p class="text-muted small">Web portofolio pribadi sebagai representasi skill dan pengalaman di bidang IT.</p>
+                        <span class="badge bg-primary bg-opacity-10 text-primary mb-3">HTML, CSS, Bootstrap</span>
+                    </div>
+                    <a href="https://portofolio-three-jet.vercel.app/" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-3">
+                        <i class="bi bi-box-arrow-up-right me-1"></i> View Project
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
     <section id="experience" class="py-5 bg-opacity-10 bg-dark shadow-inner" style="background-color: #151417;">
         <div class="container">
             <h2 class="fw-bold text-center mb-5">Work & Org <span class="text-primary">Experience</span></h2>
@@ -298,49 +308,128 @@
         </div>
     </section>
 
-    <section id="sertificate" class="py-5 text-light d-flex justify-content-center align-items-center">
-        <div class="container">
-            <h2 class="text-center mb-5 fw-bold" style="color: #0d6efd;">Certificates</h2>
-            <div class="marquee-container mb-4">
-                <div class="marquee-content">
-                    <img src="images/eceset.png" class="sertif-item" alt="Sertif 1">
-                    <img src="images/perpus.jpg" class="sertif-item" alt="Sertif 2">
-                    <img src="images/sertif2.jpg" class="sertif-item" alt="Sertif 3">
-                    <img src="images/sertifcplusplus.jpg" class="sertif-item" alt="Sertif 4">
-                    <img src="images/ssemt2.jpg" class="sertif-item" alt="Sertif 5">
-                    <img src="images/workshopsemt1.jpg" class="sertif-item" alt="Sertif 6">
-                    <img src="images/sertifhackton.jpg" class="sertif-item" alt="Sertif 7">
-                    <img src="images/eceset.png" class="sertif-item" alt="Sertif 1">
-                    <img src="images/perpus.jpg" class="sertif-item" alt="Sertif 2">
-                    <img src="images/sertif2.jpg" class="sertif-item" alt="Sertif 3">
-                    <img src="images/sertifcplusplus.jpg" class="sertif-item" alt="Sertif 4">
-                    <img src="images/ssemt2.jpg" class="sertif-item" alt="Sertif 5">
-                    <img src="images/workshopsemt1.jpg" class="sertif-item" alt="Sertif 6">
-                    <img src="images/sertifhackton.jpg" class="sertif-item" alt="Sertif 7">
-                </div>
-            </div>
-            <div class="marquee-container">
-                <div class="marquee-content reverse">
-                    <img src="images/eceset.png" class="sertif-item" alt="Sertif 1">
-                    <img src="images/perpus.jpg" class="sertif-item" alt="Sertif 2">
-                    <img src="images/sertif2.jpg" class="sertif-item" alt="Sertif 3">
-                    <img src="images/sertifhackton.jpg" class="sertif-item" alt="Sertif 4">
-                    <img src="images/sertifcplusplus.jpg" class="sertif-item" alt="Sertif 5">
-                    <img src="images/ssemt2.jpg" class="sertif-item" alt="Sertif 6">
-                    <img src="images/workshopsemt1.jpg" class="sertif-item" alt="Sertif 7">
-                    <img src="images/eceset.png" class="sertif-item" alt="Sertif 1">
-                    <img src="images/perpus.jpg" class="sertif-item" alt="Sertif 2">
-                    <img src="images/sertif2.jpg" class="sertif-item" alt="Sertif 3">
-                    <img src="images/sertifhackton.jpg" class="sertif-item" alt="Sertif 4">
-                    <img src="images/sertifcplusplus.jpg" class="sertif-item" alt="Sertif 5">
-                    <img src="images/ssemt2.jpg" class="sertif-item" alt="Sertif 6">
-                    <img src="images/workshopsemt1.jpg" class="sertif-item" alt="Sertif 7">
+<section id="achievements" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold">My <span class="text-primary">Achievements</span></h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card glass-card p-4 border-primary">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-award-fill text-warning fs-1 me-3"></i>
+                        <div>
+                            <h5 class="fw-bold mb-0">Hak Cipta (HKI)</h5>
+                            <p class="text-muted small">Program Komputer: Kost Nuansa</p>
+                        </div>
+                    </div>
+                    <p class="text-light">
+                        Pencatatan resmi HKI untuk program komputer berjudul "Kost Nuansa" yang disahkan oleh Direktorat Jenderal Kekayaan Intelektual[cite: 26, 33].
+                    </p>
+                    <a href="images/haki.pdf" target="_blank" class="btn btn-primary btn-sm rounded-pill mt-2">
+                        <i class="bi bi-file-earmark-pdf me-1"></i> Lihat Dokumen Resmi
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer class="bg-dark text-light py-4 border-top border-secondary">
+<section id="sertificate" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold">My <span class="text-primary">Certificates</span></h2>
+        
+        <div class="row g-4">
+            
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card glass-card h-100">
+                    <img src="images/eceset.png" class="card-img-top p-2" alt="Sertifikat">
+                    <div class="card-body text-center">
+                        <h6 class="card-title fw-bold">E-Certificate</h6>
+                        <button class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#sertifModal" data-bs-img="images/eceset.png">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card glass-card h-100">
+                    <img src="images/perpus.jpg" class="card-img-top p-2" alt="Sertifikat">
+                    <div class="card-body text-center">
+                        <h6 class="card-title fw-bold">Library Course</h6>
+                        <button class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#sertifModal" data-bs-img="images/perpus.jpg">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card glass-card h-100">
+                    <img src="images/sertif2.jpg" class="card-img-top p-2" alt="Sertifikat">
+                    <div class="card-body text-center">
+                        <h6 class="card-title fw-bold">E-Certificate</h6>
+                        <button class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#sertifModal" data-bs-img="images/sertif2.jpg">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card glass-card h-100">
+                    <img src="images/sertifcplusplus.jpg" class="card-img-top p-2" alt="Sertifikat">
+                    <div class="card-body text-center">
+                        <h6 class="card-title fw-bold">E-Certificate</h6>
+                        <button class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#sertifModal" data-bs-img="images/sertifcplusplus.jpg">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card glass-card h-100">
+                    <img src="images/sertifhackton.jpg" class="card-img-top p-2" alt="Sertifikat">
+                    <div class="card-body text-center">
+                        <h6 class="card-title fw-bold">E-Certificate</h6>
+                        <button class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#sertifModal" data-bs-img="images/sertifhackton.jpg">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card glass-card h-100">
+                    <img src="images/ssemt2.jpg" class="card-img-top p-2" alt="Sertifikat">
+                    <div class="card-body text-center">
+                        <h6 class="card-title fw-bold">E-Certificate</h6>
+                        <button class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#sertifModal" data-bs-img="images/ssemt2.jpg">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card glass-card h-100">
+                    <img src="images/workshopsemt1.jpg" class="card-img-top p-2" alt="Sertifikat">
+                    <div class="card-body text-center">
+                        <h6 class="card-title fw-bold">E-Certificate</h6>
+                        <button class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#sertifModal" data-bs-img="images/workshopsemt1.jpg">View</button>
+                    </div>
+                </div>
+            </div>
+        </div> </div>
+</section>
+
+<div class="modal fade" id="sertifModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark border-0">
+            <div class="modal-header border-0"><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body text-center"><img src="" id="modalImage" class="img-fluid" alt="Sertifikat Besar"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const sertifModal = document.getElementById('sertifModal');
+    sertifModal.addEventListener('show.bs.modal', function (event) {
+        const button = event.relatedTarget;
+        const imgSrc = button.getAttribute('data-bs-img');
+        document.getElementById('modalImage').src = imgSrc;
+    });
+</script>
+
+<footer class="bg-dark text-light py-4 border-top border-secondary">
         <div class="container text-center">
             <h5 class="fw-bold">Jiwa Islamutidar</h5>
             <p class="mb-2 text-muted">Mahasiswa Teknik Informatika | Full Stack Web Developer</p>
@@ -361,6 +450,13 @@
         const scrollSpy = new bootstrap.ScrollSpy(document.body, {
             target: '#navbar-example',
             offset: 100
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script>
+        AOS.init({
+        duration: 1000,
+        once: true
         });
     </script>
 </body>

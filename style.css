@@ -1,139 +1,222 @@
-/* Modern Portfolio Styles */
+/* =======================================
+   MODERN PORTFOLIO - FINAL VERSION
+======================================= */
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+  background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
+  background-attachment: fixed;
+  color: #ffffff;
+  /* ... sisa kode lainnya tetap sama ... */
+}
+
+/* =======================================
+   NAVBAR
+======================================= */
+
+.navbar {
+  backdrop-filter: blur(15px);
+}
 
 .navbar .nav-link {
   transition: all 0.3s ease;
   border-radius: 8px;
+  padding: 8px 15px;
 }
 
 .navbar .nav-link:hover {
-  background: linear-gradient(90deg, #0d6efd, #6610f2);
-  box-shadow: 0 0 15px rgba(13, 110, 253, 0.5);
-  outline: none;
+  background: linear-gradient(90deg, #8b5cf6, #4f46e5);
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
 }
 
-body {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #475569 75%, #64748b 100%);
-  background-attachment: fixed;
-  color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.nav-link.active {
+  border-bottom: 3px solid #0d6efd;
 }
 
-.glass-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+/* =======================================
+   HERO SECTION
+======================================= */
+
+#hero {
+    background: transparent; /* Mengikuti background body */
+}
+
+.hero-text h1 {
+  font-weight: 800;
+}
+
+.hero-img img {
+  transition: all 0.4s ease;
+}
+
+.hero-img img:hover {
+  transform: scale(1.03);
+}
+
+/* =======================================
+   GLASS CARD
+======================================= */
+
+.glass-card,
+.card-hover {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 1rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
 
-.glass-card:hover {
+.glass-card:hover,
+.card-hover:hover {
+  transform: translateY(-8px);
+  border-color: #0d6efd;
+  box-shadow: 0 15px 35px rgba(13, 110, 253, 0.2);
+}
+
+/* =======================================
+   ABOUT
+======================================= */
+
+#about .card {
+  transition: all 0.3s ease;
+}
+
+#about .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
-.hero-section {
-  background: linear-gradient(135deg, rgba(13, 110, 253, 0.1), rgba(102, 16, 242, 0.1));
-  border-radius: 2rem;
-  margin: 2rem 0;
+/* =======================================
+   PROJECTS
+======================================= */
+
+#projects .card {
+  height: 100%;
 }
 
-.about-section {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
-  border-radius: 2rem;
-  padding: 4rem 0;
+#projects h5 {
+  line-height: 1.5;
 }
 
-.certificate-section {
-  background: linear-gradient(135deg, rgba(13, 110, 253, 0.05), rgba(102, 16, 242, 0.05));
-  border-radius: 2rem;
-  padding: 4rem 0;
+#projects .badge {
+  padding: 8px 12px;
+  border-radius: 50px;
 }
 
-.skill-item {
-  margin-bottom: 1rem;
-}
-
-.skill-name {
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.skill-bar {
-  background: linear-gradient(90deg, #0d6efd, #6610f2);
-  height: 8px;
-  border-radius: 4px;
-  animation: grow 2s ease-out;
-}
-
-@keyframes grow {
-  from { width: 0%; }
-  to { width: var(--skill-level); }
-}
-
-.social-links a {
+#projects .btn {
   transition: all 0.3s ease;
-  color: #fff;
 }
 
-.social-links a:hover {
+#projects .btn:hover {
+  transform: translateY(-2px);
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+}
+
+/* =======================================
+   EXPERIENCE
+======================================= */
+
+#experience .card {
+  transition: all 0.3s ease;
+}
+
+#experience .card:hover {
+  transform: translateX(5px);
+}
+
+/* =======================================
+   CERTIFICATE
+======================================= */
+
+.marquee-container {
+  overflow: hidden;
+}
+
+.sertif-item {
+  width: 300px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.sertif-item:hover {
+  transform: scale(1.05);
+}
+
+/* =======================================
+   SOCIAL
+======================================= */
+
+.social-links a,
+.bi-github,
+.bi-linkedin,
+.bi-instagram {
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover,
+.bi-github:hover,
+.bi-linkedin:hover,
+.bi-instagram:hover {
   color: #0d6efd;
   transform: scale(1.2);
 }
 
+/* =======================================
+   BUTTON
+======================================= */
+
 .btn-custom {
   background: linear-gradient(90deg, #0d6efd, #6610f2);
   border: none;
-  transition: all 0.3s ease;
 }
 
 .btn-custom:hover {
-  background: linear-gradient(90deg, #6610f2, #0d6efd);
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.4);
 }
 
-.footer {
-  background: rgba(0, 0, 0, 0.8);
+/* =======================================
+   FOOTER
+======================================= */
+
+footer {
   backdrop-filter: blur(10px);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero-section, .about-section, .certificate-section {
-    margin: 1rem;
-    padding: 2rem 1rem;
-  }
+/* =======================================
+   SCROLLBAR
+======================================= */
 
-  .navbar-nav {
-    text-align: center;
-  }
-
-  .hero-text h1 {
-    font-size: 2.5rem;
-  }
-
-  .marquee-content {
-    animation-duration: 30s;
-  }
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-@media (max-width: 576px) {
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-
-  .sertif-item {
-    width: 250px;
-  }
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
 }
 
-/* Animations */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  border-radius: 20px;
+}
+
+/* =======================================
+   ANIMATIONS
+======================================= */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(25px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -143,8 +226,9 @@ body {
 @keyframes fadeInRight {
   from {
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateX(25px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -156,23 +240,190 @@ body {
 }
 
 .fade-in-right {
-  animation: fadeInRight 1.5s ease-out;
+  animation: fadeInRight 1.2s ease-out;
 }
 
-/* Scrollbar Styling */
-::-webkit-scrollbar {
-  width: 8px;
+/* =======================================
+   TABLET
+======================================= */
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  #hero {
+    min-height: auto;
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.4rem !important;
+  }
+
+  .hero-img {
+    margin-top: 40px;
+    text-align: center !important;
+  }
+
+  .hero-img img {
+    max-width: 230px !important;
+  }
+
+  #about .card {
+    margin-bottom: 20px;
+  }
+
+  #projects .card {
+    padding: 20px !important;
+  }
+
+  #projects h5 {
+    font-size: 1rem;
+  }
+
+  #projects .btn {
+    width: 100%;
+  }
+
+  .sertif-item {
+    width: 220px;
+  }
+
+  .marquee-content {
+    gap: 1rem;
+  }
+
+  footer {
+    text-align: center;
+  }
 }
 
-::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
+/* =======================================
+   MOBILE
+======================================= */
+
+@media (max-width: 576px) {
+
+  .navbar-brand {
+    font-size: 1.5rem !important;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem !important;
+  }
+
+  .hero-img img {
+    max-width: 200px !important;
+  }
+
+  .project-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-header i {
+    margin-right: 0 !important;
+    margin-bottom: 10px;
+  }
+
+  #projects h5 {
+    font-size: 0.95rem;
+  }
+
+  #projects .card {
+    padding: 18px !important;
+  }
+
+  #projects .badge {
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+  }
+
+  .sertif-item {
+    width: 180px;
+  }
+
+  #experience h5 {
+    font-size: 1rem;
+  }
+
+  footer h5 {
+    font-size: 1rem;
+  }
+
+  footer p,
+  footer small {
+    font-size: 0.85rem;
+  }
 }
 
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(90deg, #0d6efd, #6610f2);
-  border-radius: 4px;
+/* Efek Gradient Text */
+.text-gradient {
+    background: linear-gradient(90deg, #8b5cf6, #c084fc); /* Violet ke Light Violet */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(90deg, #6610f2, #0d6efd);
+/* Shadow untuk tombol */
+.shadow-primary {
+    box-shadow: 0 10px 20px -5px rgba(139, 92, 246, 0.4); /* Mengikuti warna violet */
+}
+
+/* Memperbaiki tinggi section di mobile */
+@media (max-width: 768px) {
+    #hero {
+        padding-top: 80px !important;
+        padding-bottom: 50px !important;
+    }
+    .display-3 {
+        font-size: 2.5rem !important;
+    }
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-5px);
+    border-color: #0d6efd;
+}
+
+/* Efek hover untuk kartu project */
+.card.glass-card {
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card.glass-card:hover {
+    transform: translateY(-10px);
+    border-color: #0d6efd;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Memastikan teks project tidak berantakan */
+.card p.text-muted {
+    min-height: 60px; /* Menjaga tinggi paragraf tetap seragam */
 }
