@@ -427,3 +427,9 @@ footer {
 .card p.text-muted {
     min-height: 60px; /* Menjaga tinggi paragraf tetap seragam */
 }
+
+#typed-title::after, #typed-text::after {
+    content: '|';
+    animation: blink 1s infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
