@@ -566,3 +566,32 @@ footer {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-5px); }
 }
+
+@keyframes fly-up {
+    0%, 100% { transform: translateY(0) rotate(-35deg); }
+    50% { transform: translateY(-8px) rotate(-35deg); }
+}
+
+
+
+/* Hilangkan garis di section terakhir agar tidak ada garis gantung di bawah */
+section:last-of-type {
+    border-bottom: none;
+}
+
+/* Garis pembatas yang cantik dengan efek cahaya */
+.section-divider::after {
+    content: "";
+    display: block;
+    width: 40%;              /* Lebar garis 40% dari layar */
+    height: 1px;             /* Ketebalan garis */
+    background: linear-gradient(
+        90deg, 
+        transparent 0%, 
+        #8b5cf6 50%, 
+        transparent 100%
+    );
+    margin: 4rem auto 0 auto; /* Jarak atas 4rem, dan center di tengah */
+    opacity: 0.8;
+    box-shadow: 0 0 10px #8b5cf6; /* Efek glow ungu */
+}
