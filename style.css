@@ -9,10 +9,15 @@ html {
 
 /* Body */
 body {
-  background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
+  /* Gradasi Midnight Violet ke Deep Space */
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #312e81 100%);
   background-attachment: fixed;
+  background-size: cover;
   color: #ffffff;
-  /* ... sisa kode lainnya tetap sama ... */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 /* =======================================
@@ -21,12 +26,16 @@ body {
 
 .navbar {
   backdrop-filter: blur(15px);
+  background: rgba(15, 23, 42, 0.8) !important; /* Warna gelap transparan */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 1rem 0;
 }
 
 .navbar .nav-link {
   transition: all 0.3s ease;
   border-radius: 8px;
   padding: 8px 15px;
+  color: #ffffff !important; /* Pastikan teks selalu putih */
 }
 
 .navbar .nav-link:hover {
@@ -34,8 +43,11 @@ body {
   box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
 }
 
+/* Bagian ini yang krusial: mengubah warna biru menjadi violet */
 .nav-link.active {
-  border-bottom: 3px solid #0d6efd;
+  border-bottom: 3px solid #8b5cf6 !important;
+  color: #ffffff !important;
+  background: rgba(139, 92, 246, 0.1); /* Efek background tipis saat aktif */
 }
 
 /* =======================================
@@ -62,20 +74,21 @@ body {
    GLASS CARD
 ======================================= */
 
-.glass-card,
-.card-hover {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 1rem;
-  transition: all 0.3s ease;
+.glass-card {
+    /* Background sedikit lebih gelap untuk menonjolkan teks putih */
+    background: rgba(255, 255, 255, 0.04); 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.glass-card:hover,
-.card-hover:hover {
-  transform: translateY(-8px);
-  border-color: #0d6efd;
-  box-shadow: 0 15px 35px rgba(13, 110, 253, 0.2);
+.glass-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #8b5cf6; /* Warna violet muncul saat di-hover */
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 /* =======================================
@@ -433,3 +446,9 @@ footer {
     animation: blink 1s infinite;
 }
 @keyframes blink { 50% { opacity: 0; } }
+
+@media (max-width: 576px) {
+    #projects .card p.text-muted {
+        display: none; /* Menyembunyikan deskripsi di HP agar kartu lebih pendek */
+    }
+}
