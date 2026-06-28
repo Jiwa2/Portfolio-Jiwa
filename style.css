@@ -1,15 +1,9 @@
-/* =======================================
-   MODERN PORTFOLIO - FINAL VERSION
-======================================= */
-
 /* Smooth Scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* Body */
 body {
-  /* Gradasi Midnight Violet ke Deep Space */
   background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #312e81 100%);
   background-attachment: fixed;
   background-size: cover;
@@ -26,7 +20,7 @@ body {
 
 .navbar {
   backdrop-filter: blur(15px);
-  background: rgba(15, 23, 42, 0.8) !important; /* Warna gelap transparan */
+  background: rgba(15, 23, 42, 0.8) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   padding: 1rem 0;
 }
@@ -35,7 +29,7 @@ body {
   transition: all 0.3s ease;
   border-radius: 8px;
   padding: 8px 15px;
-  color: #ffffff !important; /* Pastikan teks selalu putih */
+  color: #ffffff !important;
 }
 
 .navbar .nav-link:hover {
@@ -43,11 +37,10 @@ body {
   box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
 }
 
-/* Bagian ini yang krusial: mengubah warna biru menjadi violet */
 .nav-link.active {
   border-bottom: 3px solid #8b5cf6 !important;
   color: #ffffff !important;
-  background: rgba(139, 92, 246, 0.1); /* Efek background tipis saat aktif */
+  background: rgba(139, 92, 246, 0.1); 
 }
 
 /* =======================================
@@ -55,7 +48,7 @@ body {
 ======================================= */
 
 #hero {
-    background: transparent; /* Mengikuti background body */
+    background: transparent;
 }
 
 .hero-text h1 {
@@ -70,12 +63,7 @@ body {
   transform: scale(1.03);
 }
 
-/* =======================================
-   GLASS CARD
-======================================= */
-
 .glass-card {
-    /* Background sedikit lebih gelap untuk menonjolkan teks putih */
     background: rgba(255, 255, 255, 0.04); 
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
@@ -86,7 +74,7 @@ body {
 
 .glass-card:hover {
     background: rgba(255, 255, 255, 0.08);
-    border-color: #8b5cf6; /* Warna violet muncul saat di-hover */
+    border-color: #8b5cf6; 
     transform: translateY(-8px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
@@ -181,10 +169,6 @@ body {
   color: #0d6efd;
   transform: scale(1.2);
 }
-
-/* =======================================
-   BUTTON
-======================================= */
 
 .btn-custom {
   background: linear-gradient(90deg, #0d6efd, #6610f2);
@@ -387,20 +371,17 @@ footer {
   }
 }
 
-/* Efek Gradient Text */
 .text-gradient {
-    background: linear-gradient(90deg, #8b5cf6, #c084fc); /* Violet ke Light Violet */
+    background: linear-gradient(90deg, #8b5cf6, #c084fc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 800;
 }
 
-/* Shadow untuk tombol */
 .shadow-primary {
-    box-shadow: 0 10px 20px -5px rgba(139, 92, 246, 0.4); /* Mengikuti warna violet */
+    box-shadow: 0 10px 20px -5px rgba(139, 92, 246, 0.4); 
 }
 
-/* Memperbaiki tinggi section di mobile */
 @media (max-width: 768px) {
     #hero {
         padding-top: 80px !important;
@@ -425,7 +406,6 @@ footer {
     border-color: #0d6efd;
 }
 
-/* Efek hover untuk kartu project */
 .card.glass-card {
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -436,9 +416,8 @@ footer {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Memastikan teks project tidak berantakan */
 .card p.text-muted {
-    min-height: 60px; /* Menjaga tinggi paragraf tetap seragam */
+    min-height: 60px;
 }
 
 #typed-title::after, #typed-text::after {
@@ -449,11 +428,10 @@ footer {
 
 @media (max-width: 576px) {
     #projects .card p.text-muted {
-        display: none; /* Menyembunyikan deskripsi di HP agar kartu lebih pendek */
+        display: none; 
     }
 }
 
-/* Tombol Utama (Explore My Work) */
 .btn-primary {
     background: linear-gradient(90deg, #8b5cf6, #4f46e5);
     border: none;
@@ -469,7 +447,6 @@ footer {
     box-shadow: 0 0 25px rgba(139, 92, 246, 0.6) !important;
 }
 
-/* Tombol Kedua (About Me) */
 .btn-outline-light {
     border: 2px solid rgba(255, 255, 255, 0.2);
     background: transparent;
@@ -500,7 +477,6 @@ footer {
     left: 100%;
 }
 
-/* Efek Hover Skill Card */
 .skill-card {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     cursor: default;
@@ -509,25 +485,22 @@ footer {
 
 .skill-card:hover {
     transform: translateY(-8px);
-    background: rgba(139, 92, 246, 0.15); /* Muncul rona ungu tipis */
-    border-color: #8b5cf6;               /* Border berubah menjadi ungu */
-    box-shadow: 0 5px 20px rgba(139, 92, 246, 0.3); /* Glow yang lembut */
+    background: rgba(139, 92, 246, 0.15);
+    border-color: #8b5cf6;             
+    box-shadow: 0 5px 20px rgba(139, 92, 246, 0.3); 
 }
 
 @media (max-width: 768px) {
-    /* Mengurangi ukuran foto di layar HP */
     .hero-text img {
         max-width: 200px !important;
     }
 
-    /* Mengurangi padding hero agar tidak terlalu tinggi (memakan layar) */
     #hero {
         min-height: auto !important;
         padding-top: 100px !important;
         padding-bottom: 60px !important;
     }
-    
-    /* Mengatur ulang teks agar tidak terlalu lebar */
+
     .hero-text {
         padding-left: 15px;
         padding-right: 15px;
@@ -541,7 +514,6 @@ footer {
     border-color: #8b5cf6 !important;
 }
 
-/* Sembunyikan pesawat secara default */
 .plane-icon {
     display: inline-block;
     opacity: 0;
@@ -551,13 +523,11 @@ footer {
     margin-left: 5px;
 }
 
-/* Saat nav-link aktif, pesawat muncul dan terbang ke kanan */
 .nav-link.active .plane-icon {
     opacity: 1;
     transform: translateX(0) rotate(0deg);
 }
 
-/* Opsional: Animasi "terbang" kecil */
 .nav-link.active .plane-icon {
     animation: fly 2s infinite ease-in-out;
 }
@@ -572,26 +542,41 @@ footer {
     50% { transform: translateY(-8px) rotate(-35deg); }
 }
 
-
-
-/* Hilangkan garis di section terakhir agar tidak ada garis gantung di bawah */
 section:last-of-type {
     border-bottom: none;
 }
 
-/* Garis pembatas yang cantik dengan efek cahaya */
 .section-divider::after {
     content: "";
     display: block;
-    width: 40%;              /* Lebar garis 40% dari layar */
-    height: 1px;             /* Ketebalan garis */
+    width: 40%;              
+    height: 1px;            
     background: linear-gradient(
         90deg, 
         transparent 0%, 
         #8b5cf6 50%, 
         transparent 100%
     );
-    margin: 4rem auto 0 auto; /* Jarak atas 4rem, dan center di tengah */
+    margin: 4rem auto 0 auto; 
     opacity: 0.8;
-    box-shadow: 0 0 10px #8b5cf6; /* Efek glow ungu */
+    box-shadow: 0 0 10px #8b5cf6;
+}
+
+html.lenis {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #8b5cf6, #c084fc);
+    box-shadow: 0 0 10px #8b5cf6;
+    z-index: 99999;
+    width: 0%;
+    transition: width 0.08s ease;
 }
